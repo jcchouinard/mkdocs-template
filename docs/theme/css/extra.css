@@ -1,0 +1,69 @@
+/*change highlight color*/
+/*:root > * {
+    --md-code-hl-color: #36464e;
+}*/
+
+/*set theme color*/
+/*:root {
+    --md-primary-fg-color:        #1A237E;
+    --md-primary-bg-color:        #ffffff;
+  }*/
+
+
+.md-typeset a {
+    color: cyan; /* border-radius of the code section*/
+  }
+.md-typeset code {
+  border-radius: 5px; /* border-radius of the code section*/
+}
+.md-typeset img {
+  border-radius: 5px; /* images border-radius */
+  height: auto;
+  max-width: 100%;
+}
+.md-grid {
+  max-width: 1420px; /* width of the middle section */
+}
+/* support buttons */
+.singup {
+    background-color: #1A237E;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.donation {
+  padding: 0 0.6rem;
+}
+
+.donate-button-paypal {
+  width: 6rem;
+  height: 2rem;
+  background-image: url("/assets/images/support/paypal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.donate-button-patreon {
+  width: 6rem;
+  height: 2rem;
+  background-image: url("/assets/images/support/patreon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.donate-button-buymeacoffee {
+  width: 6rem;
+  height: 2rem;
+  background-image: url("/assets/images/support/buymeacoffee.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}

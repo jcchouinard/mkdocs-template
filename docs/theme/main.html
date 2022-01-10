@@ -1,0 +1,78 @@
+<!-- Elements added to main will be displayed on all pages -->
+{% extends "base.html" %}
+
+<!-- Announcement bar -->
+{% block announce %}
+  <a href="https://twitter.com/ChouinardJC">
+    For updates follow <strong>@ChouinardJC</strong> on
+    <span class="twemoji twitter">
+      {% include ".icons/fontawesome/brands/twitter.svg" %}
+    </span>
+    <strong>Twitter</strong>
+  </a>
+{% endblock %}
+
+<!-- footer -->
+{% block footer %}{% include "footer.html" %} {% endblock %}
+
+<!-- site nav -->
+
+{% block site_nav %} {% if nav %} {% if page and page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "navigation" in page.meta.hide %} {% endif %}
+<div
+  class="md-sidebar md-sidebar--primary"
+  data-md-component="sidebar"
+  data-md-type="navigation"
+  {{
+  hidden
+  }}
+>
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">{% include "partials/nav.html" %}</div>
+  </div>
+</div>
+{% endif %} {% if page.toc and not "toc.integrate" in features %} {% if page and
+page.meta and page.meta.hide %} {% set hidden = "hidden" if "toc" in
+page.meta.hide %} {% endif %}
+<div
+  class="md-sidebar md-sidebar--secondary"
+  data-md-component="sidebar"
+  data-md-type="toc"
+  {{
+  hidden
+  }}
+>
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">{% include "partials/toc.html" %}</div>
+    <!-- donation section -->
+    <div class="donation">
+      <h3>Support us</h3>
+      <form
+        method="get"
+        type="buymeacoffee"
+        target="_blank"
+        action="https://www.buymeacoffee.com/jcchouinard"
+      >
+        <button class="donate-button-buymeacoffee" type="submit"></button>
+      </form>
+      <form
+        method="post"
+        type="submit"
+        target="_blank"
+        action="https://www.paypal.com/donate/?business=7ELEFH2W8ZW66&no_recurring=0&currency_code=AUD"
+      >
+        <button class="donate-button-paypal" type="submit"></button>
+      </form>
+      <form
+        method="get"
+        type="patreon"
+        target="_blank"
+        action="https://www.patreon.com/jcchouinard"
+      >
+        <button class="donate-button-patreon" type="submit"></button>
+      </form>
+    </div>
+    <!-- donation end -->
+  </div>
+</div>
+{% endif %} {% endblock %}
