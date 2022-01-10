@@ -1,0 +1,141 @@
+# Project information
+site_name: PythonProg
+site_url: https://jcchouinard.github.io/
+site_author: Jean-Christophe Chouinard
+site_description: All things Python
+
+
+# Theme Configuration
+theme:
+  name: material
+  highlightjs: true
+  custom_dir: docs/theme
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.annotate
+    - announce.dismiss
+    - navigation.tracking
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      primary: cyan
+      accent: light-blue
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: cyan
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+  font: false
+  favicon: assets/images/favicon.svg
+  icon: 
+    logo: material/code-braces-box
+# Custom theme additions
+extra_css:
+  - theme/css/extra.css
+
+
+# Plugins
+plugins:
+  - search:
+      prebuild_index: true
+      lang: 'en'
+  - exclude-search:
+      exclude:
+        - blog.md
+  - minify:
+      minify_html: true
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - rss:
+      abstract_chars_count: -1
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d %H:%M"
+      url_parameters:
+          utm_source: "PythonProg"
+          utm_medium: "RSS"
+          utm_campaign: "feed-syndication"
+      feed_ttl: 1440
+extra:
+  analytics:
+    provider: google
+    property: 
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ChouinardJC
+      name: JC Chouinard on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jeanchristophechouinard
+      name: JC Chouinard on Linkedin
+    - icon: fontawesome/brands/github
+      link: https://github.com/jcchouinard
+      name: JC Chouinard on Github
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCthJJqyUGdI5EA0YjnjXthw
+      name: JC Chouinard on YouTube
+  generator: false
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - sane_lists
+  - attr_list
+  - markdown.extensions.codehilite:
+     guess_lang: false
+  - def_list
+  - footnotes
+  - abbr
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      title: On This Page
+      permalink: true
+      toc_depth: '2'
+      separator: '-'
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+      auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tilde
+
+# Copyright
+copyright: Copyright &copy; 2021-2025 Jean-Christophe Chouinard
+
+  # Python Markdown
