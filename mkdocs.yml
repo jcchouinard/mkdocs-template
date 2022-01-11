@@ -44,6 +44,8 @@ theme:
 # Custom theme additions
 extra_css:
   - theme/css/extra.css
+extra_javascript:
+  - theme/javascripts/extra.js
 
 
 # Plugins
