@@ -12,11 +12,13 @@
   </a>
 {% endblock %}
 
+<!-- main content -->
+{% block content %}{% include "content.html" %} {% endblock %}
+
 <!-- footer -->
 {% block footer %}{% include "footer.html" %} {% endblock %}
 
 <!-- site nav -->
-
 {% block site_nav %} {% if nav %} {% if page and page.meta and page.meta.hide %}
 {% set hidden = "hidden" if "navigation" in page.meta.hide %} {% endif %}
 <div

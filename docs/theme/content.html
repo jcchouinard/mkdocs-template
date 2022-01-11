@@ -1,0 +1,9 @@
+{% if page.meta.source %}
+<div class="source-links">
+{% for filename in page.meta.source %}
+    <span class="label label-primary">{{ filename }}</span>
+{% endfor %}
+</div>
+{% endif %}
+<p><a class="md-button md-button--primary" href="#">Subscribe to our newsletter</a></p>
+{{ page.content }}
