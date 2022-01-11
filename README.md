@@ -6,8 +6,8 @@ Template built using the [material design theme](https://github.com/squidfunk/mk
 
 Resources
 - [Boilerplate](https://mkdocs.peaceiris.com/)
-- [](https://squidfunk.github.io/mkdocs-material/)
-- [](https://www.youtube.com/watch?v=0pYN6Z-t1-s)
-- [](https://www.youtube.com/watch?v=eJVVbZYUYro)
-- [](https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe)
+- [Mkdocs material docs](https://squidfunk.github.io/mkdocs-material/)
+- [Youtube - Create beautiful and localized documentations and websites using MkDocs + Github](https://www.youtube.com/watch?v=0pYN6Z-t1-s)
+- [Youtube - Static Site Generation with MkDocs](https://www.youtube.com/watch?v=eJVVbZYUYro)
+- [Publish to github pages](https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe)
 - [mkdocs newsletter](https://lyz-code.github.io/mkdocs-newsletter/install/)
