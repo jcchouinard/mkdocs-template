@@ -1,4 +1,4 @@
-const allH2 = document.querySelectorAll("h2")
+var allH2 = document.querySelectorAll("h2")
 allH2[0].insertAdjacentHTML('beforebegin',
     `<a href="#">
     <div class="as-container">
