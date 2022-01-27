@@ -1,7 +1,9 @@
 ---
-description: Article 2
+title: Article with title and meta description
+description: This is a meta description tag
+
 authors:
     - Jean-Christophe Chouinard
 ---
 
-# Article 2
+# Article with title and meta description

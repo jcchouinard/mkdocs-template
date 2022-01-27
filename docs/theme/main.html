@@ -12,8 +12,17 @@
   </a>
 {% endblock %}
 
-<!-- prettier social share https://rohancragg.co.uk/writing/social-media-sharing/-->
+
+<!-- Additional tags -->
 {% block extrahead %}
+    {% if page and page.meta and page.meta.robots %}
+        <meta name="robots" content="{{ page.meta.robots }}" />
+    {% else %}
+        <!-- Change this line when launching site -->
+        <meta name="robots" content="noindex, nofollow" />
+    {% endif %}
+
+    <!-- prettier social share https://rohancragg.co.uk/writing/social-media-sharing/-->
     {% if page and page.meta and page.meta.og_title %}
         <meta property="og:title" content="{{ page.meta.title }}" />
     {% elif page and page.meta and page.meta.title %}
@@ -48,6 +57,8 @@
     {% elif config.site_description %}
         <meta property="og:description" content="{{ config.site_description }}">
     {% endif %}
+
+
 
     <meta property="og:locale" content="en-GB" />
     <meta property="fb:app_id" content="{{ config.fb_appid }}" />

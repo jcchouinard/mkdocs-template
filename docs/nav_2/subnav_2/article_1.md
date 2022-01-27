@@ -1,6 +1,7 @@
 ---
-description: article 1
+title: Post with custom meta robots tag
+robots: noindex,follow,noarchive
 ---
 
 
-# Article 1
+# Post with custom meta robots tag
