@@ -16,6 +16,7 @@ hide:
 - [Example them I was inspired by (1)](https://github.com/fire1ce/3os.org/)
 - [Example them I was inspired by (2)](https://3os.org/guides/better-terminal-experience/)
 - [Blogging Plugin](https://liang2kl.codes/mkdocs-blogging-plugin/)
+- [Deploying to github pages (official doc)](https://www.mkdocs.org/user-guide/deploying-your-docs/)
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
