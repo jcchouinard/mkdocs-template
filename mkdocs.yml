@@ -13,7 +13,7 @@ theme:
   language: en
   features:
     - navigation.tabs
-    - navigation.instant
+    #- navigation.instant
     - navigation.top
     - navigation.sections
     - search.suggest
@@ -50,6 +50,20 @@ extra_javascript:
 
 # Plugins
 plugins:
+  - blogging:
+      dirs: # The directories to be included
+        - nav_1
+        - nav_2
+      size: 10
+      locale: en         # The locale for time localizations, default: system's locale
+      time_format: '%Y-%m-%d' # The format used to display the time
+      meta_time_format: '%Y-%m-%d' # The format used to parse the time from meta
+      sort: 
+        from: new        # Sort from new to old, default
+        by: creation     # Sort by the first commit time, default
+        # or revision    # Sort by the latest commit time
+      paging: false      # Disable paging
+      show_total: false  # Remove 'total pages' label
   - search:
       prebuild_index: true
       lang: 'en'

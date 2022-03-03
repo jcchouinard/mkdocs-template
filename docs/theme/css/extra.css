@@ -82,14 +82,15 @@
     border-radius: 5px;
   }
 
-.md-typeset .md-button--primary {
+.md-typeset .md-button--primary {/*.md-typeset */
     background-color: #00bdd6;
     border-color: #00bdd6;
     color: var(--md-primary-bg-color);
 }
-.md-typeset .md-button {
+.md-button {/*.md-typeset */
     border: 0.1rem solid;
     border-radius: 0.1rem;
+    background-color:#2E303E;
     color: #fff;
     cursor: pointer;
     display: inline-block;

@@ -3,16 +3,19 @@ hide:
   - navigation
 ---
 
-# Welcome to MkDocs
+# Welcome to your first MkDocs Website
 
-Resources
-- [](https://squidfunk.github.io/mkdocs-material/)
-- [](https://www.youtube.com/watch?v=0pYN6Z-t1-s)
-- [](https://www.youtube.com/watch?v=eJVVbZYUYro)
-- [](https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe)
-- [](https://github.com/squidfunk/mkdocs-material)
-- [](https://github.com/fire1ce/3os.org/)
-- [](https://3os.org/guides/better-terminal-experience/)
+{{ blog_content }}
+
+## Resources to help you
+- [MkDocs Material official documentation](https://squidfunk.github.io/mkdocs-material/)
+- [Material MkDocs Github Repo](https://github.com/squidfunk/mkdocs-material)
+- [Youtube tutorial (1)](https://www.youtube.com/watch?v=0pYN6Z-t1-s)
+- [Youtube tutorial (2)](https://www.youtube.com/watch?v=eJVVbZYUYro)
+- [Publish your Markdown docs on GitHub Pages](https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe)
+- [Example them I was inspired by (1)](https://github.com/fire1ce/3os.org/)
+- [Example them I was inspired by (2)](https://3os.org/guides/better-terminal-experience/)
+- [Blogging Plugin](https://liang2kl.codes/mkdocs-blogging-plugin/)
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
